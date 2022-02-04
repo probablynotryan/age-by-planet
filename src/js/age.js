@@ -22,4 +22,14 @@ export default class Age {
         return;
       }
     }
+
+    overOrUnder(age) {
+      if (age > 72) {
+        return age - 72;
+      } else if (age < 72) {
+        return 72 - age;
+      } else {
+        return 0;
+      }
+    }
 }

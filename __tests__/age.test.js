@@ -6,23 +6,32 @@ describe ('Age', () => {
   
   let age;
 
-  beforeEach(() => {
-    age = new Age(100);
-  });
+  // beforeEach(() => {
+  //   age = new Age(10);
+  // });
 
-it('should create an object with the inputted number as a property of earthAge', () => {
-  expect(age.earthAge).toEqual(100);
+it('should create an object with the inputted number as the property of earthAge', () => {
+  age = new Age(10);
+  expect(age.earthAge).toEqual(10);
 })
-it('should create an object with the 62 as a property of venusAge', () => {
-  expect(age.venusAge).toEqual(62);
+it('should create an object with the the as a property of venusAge', () => {
+  age = new Age(10);
+  expect(age.venusAge).toEqual(6);
 })
-it('should create an object with the 24 as a property of mercuryAge', () => {
-  expect(age.mercuryAge).toEqual(24);
+it('should create an object with the 2 as the property of mercuryAge', () => {
+  age = new Age(10);
+  expect(age.mercuryAge).toEqual(2);
 })
-it('should create an object with the 188 as a property of marsAge', () => {
-  expect(age.marsAge).toEqual(188);
+it('should create an object with the 18 as the property of marsAge', () => {
+  age = new Age(10);
+  expect(age.marsAge).toEqual(18);
 })
-it('should create an object with the 1186 as a property of jupiterAge', () => {
-  expect(age.jupiterAge).toEqual(1186);
+it('should create an object with the 118 as the property of jupiterAge', () => {
+  age = new Age(10);
+  expect(age.jupiterAge).toEqual(118);
+})
+it('should return a object with 1 as a property of earthAge', () => {
+  age = new Age(79);
+  expect(age.earthAge).toEqual(1);
 })
 })

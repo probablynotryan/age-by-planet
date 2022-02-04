@@ -10,6 +10,6 @@ export default class Age {
   // average US life expectancy = 78
 
     yourAge(age, ageAdjustment){
-      return Math.floor(age * ageAdjustment);
+      return Math.floor(age / ageAdjustment);
     }
 }

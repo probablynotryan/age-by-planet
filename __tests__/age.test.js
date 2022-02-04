@@ -29,12 +29,21 @@ it('should create an object with the 118 as the property of jupiterAge', () => {
 })
 
 describe('yourAge', () => {
-  
+
   it("should return a value of 2", ()  => {
     let age = new Age();
     expect(age.yourAge(10, 5)).toEqual(2);
   })
 
+})
+
+describe('lifeTimer', () => {
+
+  it("should return a returned value of US life expectancy by inputted gender at birth", () => {
+    let age = new Age();
+    expect(age.lifeTimer("male")).toEqual(75);
+    expect(age.lifeTimer("female")).toEqual(78);
+  })
 })
 
 // (temporarily disabled while classes are corrected to meet objective standard)

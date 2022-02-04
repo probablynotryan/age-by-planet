@@ -48,11 +48,14 @@ describe('lifeTimer', () => {
 
 describe('overOrUnder', () => {
 
-  it("should return a value of 1 if over or under (smoker lifetime expectancy (62)), return 0 if equal to 62", () => {
+  it("should return a value of 1 if over or under (smoker lifetime expectancy (62), non-smoker life expectancy (72)), return 0 if equal to 62", () => {
     let age = new Age();
     expect(age.overOrUnder(63, age.lifeTimer("smoker"))).toEqual(1);
     expect(age.overOrUnder(61, age.lifeTimer("smoker"))).toEqual(1);
     expect(age.overOrUnder(62, age.lifeTimer("smoker"))).toEqual(0);
+    expect(age.overOrUnder(71, age.lifeTimer("nonsmoker"))).toEqual(1);
+    expect(age.overOrUnder(73, age.lifeTimer("nonsmoker"))).toEqual(1);
+    expect(age.overOrUnder(72, age.lifeTimer("nonsmoker"))).toEqual(0);
   })
 })
 // (temporarily disabled while classes are corrected to meet objective standard)

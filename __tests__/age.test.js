@@ -41,11 +41,20 @@ describe('lifeTimer', () => {
 
   it("should return a returned value of US life expectancy by smoker vs nonsmoker", () => {
     let age = new Age();
-    expect(age.lifeTimer("smoker")).toEqual(65);
-    expect(age.lifeTimer("nonsmoker")).toEqual(75);
+    expect(age.lifeTimer("smoker")).toEqual(62);
+    expect(age.lifeTimer("nonsmoker")).toEqual(72);
   })
 })
 
+describe('overOrUnder', () => {
+
+  it("should return a value of 1 if over or under 72, return 0 if equal to 72", () => {
+    let age = new Age();
+    expect(age.overOrUnder(73)).toEqual(1);
+    expect(age.overOrUnder(71)).toEqual(1);
+    expect(age.overOrUnder(72)).toEqual(0);
+  })
+})
 // (temporarily disabled while classes are corrected to meet objective standard)
 // it('should return a object with 1 as a property of earthAge', () => {
 //   age = new Age(79);

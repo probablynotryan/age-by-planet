@@ -39,10 +39,10 @@ describe('yourAge', () => {
 
 describe('lifeTimer', () => {
 
-  it("should return a returned value of US life expectancy by inputted gender at birth", () => {
+  it("should return a returned value of US life expectancy by smoker vs nonsmoker", () => {
     let age = new Age();
-    expect(age.lifeTimer("male")).toEqual(75);
-    expect(age.lifeTimer("female")).toEqual(78);
+    expect(age.lifeTimer("smoker")).toEqual(65);
+    expect(age.lifeTimer("nonsmoker")).toEqual(75);
   })
 })
 

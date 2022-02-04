@@ -10,7 +10,7 @@ it('should create an object with the inputted number as a property of earthAge',
 })
 it('should create an object with the inputted number as a property of earthAge', () => {
   let age = new Age(100);
-  expect(age.venusAge).toEqual(62);
+  expect(age.venusAge).toEqual(61);
 })
 
 })

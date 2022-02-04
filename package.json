@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "Brenna Lavin",
+  "author": "Ryan Bass",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",

@@ -26,6 +26,14 @@ it('should create an object with the 118 as the property of jupiterAge', () => {
   age = new Age(10);
   expect(age.jupiterAge).toEqual(0);
   })
+it('should create an object with the isTheEnd property with the value of 1', () => {
+  age = new Age(63, "smoker");
+  expect(age.isTheEnd).toEqual(1);
+})
+it('should create an object with the isTheEnd property with the value of 62', () => {
+  age = new Age(10, "nonsmoker");
+  expect(age.isTheEnd).toEqual(62);
+})
 })
 
 describe('yourAge', () => {

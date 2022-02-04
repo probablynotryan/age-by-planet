@@ -1,6 +1,6 @@
 export default class Age {
-  constructor(age) {
-    this.isTheEnd = this.lifeTimer();
+  constructor(age, smokerCheck) {
+    this.isTheEnd = this.overOrUnder(age, this.lifeTimer(smokerCheck));
     this.earthAge = this.yourAge(age, 1);
     this.venusAge = this.yourAge(age, 0.62);
     this.mercuryAge = this.yourAge(age, 0.24);

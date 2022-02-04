@@ -48,7 +48,7 @@ describe('lifeTimer', () => {
 
 describe('overOrUnder', () => {
 
-  it("should return a value of 11 if over or under 62, return 0 if equal to 62", () => {
+  it("should return a value of 1 if over or under (smoker lifetime expectancy (62)), return 0 if equal to 62", () => {
     let age = new Age();
     expect(age.overOrUnder(63, age.lifeTimer("smoker"))).toEqual(1);
     expect(age.overOrUnder(61, age.lifeTimer("smoker"))).toEqual(1);

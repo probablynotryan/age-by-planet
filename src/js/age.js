@@ -23,11 +23,12 @@ export default class Age {
       }
     }
 
-    overOrUnder(age) {
-      if (age > 72) {
-        return age - 72;
-      } else if (age < 72) {
-        return 72 - age;
+
+    overOrUnder(age, smokerCheck) {
+      if (age > (smokerCheck)) {
+        return age - (smokerCheck);
+      } else if (age < (smokerCheck)) {
+        return (smokerCheck) - age;
       } else {
         return 0;
       }

@@ -1,23 +1,23 @@
-# Galatic Age Calculator
+# Galactic Age Calculator
 
 #### By _**Ryan Bass**_
 
-#### _This application allows you to order movies and will display an itemized receipt when submitted._
+#### This script demonstrates our familariness with classes, objects, jest testing, and more!
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* Javascript
+* Jest
+* Lint
+* Webpack
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This script takes values given to it (age) and returns properties with what that age would be on other select planets. It also returns with how many years are until your life expectancy, or how many years have passed since your life expectancy, considering whether or not the user is a smoker._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
+* Git clone this repository to your computer and run "index.html" in a supported browser.
 * _to list setup instructions_
 * _in a simple_
 * _easy-to-understand_
@@ -27,8 +27,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* No bugs reported.
 
 ## License
 

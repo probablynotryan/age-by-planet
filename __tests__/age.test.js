@@ -65,9 +65,11 @@ describe('overOrUnder', () => {
     expect(age.overOrUnder(73, age.lifeTimer("nonsmoker"))).toEqual(1);
     expect(age.overOrUnder(72, age.lifeTimer("nonsmoker"))).toEqual(0);
   })
+
+  it("should return a value of 1 when planet age is past life expectancy age and test to equal subtraction of the life expectancy age and their planet age (354)", () => {
+   let age = new Age(100, "smoker");
+   let test = age.overOrUnder(age.mercuryAge, 62);
+    expect(age.pastLifeExpectancy).toEqual(1);
+    expect(test).toEqual(354);
+  })
 })
-// (temporarily disabled while classes are corrected to meet objective standard)
-// it('should return a object with 1 as a property of earthAge', () => {
-//   age = new Age(79);
-//   expect(age.earthAge).toEqual(1)
-// })

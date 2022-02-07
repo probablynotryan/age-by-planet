@@ -10,31 +10,30 @@ export default class Age {
 
   }
 
-    yourAge(age, ageAdjustment){      
-      return Math.floor(age / ageAdjustment);
-    }
+  yourAge(age, ageAdjustment){      
+    return Math.floor(age / ageAdjustment);
+  }
 
-    lifeTimer(smokerCheck) {
-      if (smokerCheck === "smoker"){
-        return 62; // based on reports of smokers living an average of 10 years younger than nonsmokers
-      } else if (smokerCheck === "nonsmoker"){
-        return 72; // based on world average life expectancy 2021
-      } else {
-        return;
-      }
+  lifeTimer(smokerCheck) {
+    if (smokerCheck === "smoker"){
+      return 62;
+    } else if (smokerCheck === "nonsmoker"){
+      return 72;
+    } else {
+      return;
     }
+  }
 
-
-    overOrUnder(age, smokerCheck) {
-      if (age > (smokerCheck)) {
-        this.pastLifeExpectancy = 1;
-        return age - (smokerCheck);
-      } else if (age < (smokerCheck)) {
-        this.pastLifeExpectancy = -1
-        return (smokerCheck) - age;
-      } else {
-        this.pastLifeExpectancy = -1;
-        return 0;
-      }
+  overOrUnder(age, smokerCheck) {
+    if (age > (smokerCheck)) {
+      this.pastLifeExpectancy = 1;
+      return age - (smokerCheck);
+    } else if (age < (smokerCheck)) {
+      this.pastLifeExpectancy = -1
+      return (smokerCheck) - age;
+    } else {
+      this.pastLifeExpectancy = -1;
+      return 0;
     }
+  }
 }
